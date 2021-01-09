@@ -1,5 +1,6 @@
 package v4;
 
+import java.io.IOException;
 import java.util.Map;
 
 public class Greeter {
@@ -10,7 +11,7 @@ public class Greeter {
         template = new Template(s);
     }
     
-    public String getGreeting(Map<String, String> vars) {
+    public String getGreeting(Map<String, String> vars) throws IOException {
         return template.instantiate(vars);
     }
     
