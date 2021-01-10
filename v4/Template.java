@@ -18,6 +18,8 @@ public class Template {
             if (isVariable(words[i])) {
                 if (words[i].equals("$daypart")) 
                     translatedWords[i] = (new DayPart()).toString();
+                else if (words[i].equals("$newline"))
+                    translatedWords[i] = "\n";
                 else if (words[i].equals("$zippy"))
                     translatedWords[i] = zippy();
                 else if (args.containsKey(words[i]))
@@ -49,7 +51,7 @@ public class Template {
             str = zippyFile.nextLine();
         }
         zippyFile.close();
-        return "\nZippy Quote: " + str;
+        return "Zippy Quote: " + str;
     }
 
 }

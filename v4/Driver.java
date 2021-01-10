@@ -8,7 +8,7 @@ public class Driver {
 
     public static void main(String[] args) throws IOException {
         String template = "Good $daypart $name - that's a nice $color shirt. " +
-                "$zippy";
+                "$newline $zippy";
         Map<String, String> templateVars = new HashMap<String, String>();
         templateVars.put("$name", "Isaac");
         templateVars.put("$color", "green");
