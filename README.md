@@ -1,5 +1,7 @@
 [Github Classroom Assignment URL](https://classroom.github.com/a/-TwiapST)
 
+#### **Submission Questions are answered below  under Submission**
+
 #### **Prework**
 
 ** Please complete [ICL: Week 1](https://seattleu.instructure.com/courses/1596305/assignments/6864506 "ICL: Week 1") before completing this homework assignment. **
