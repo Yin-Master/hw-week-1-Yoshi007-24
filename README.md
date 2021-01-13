@@ -58,6 +58,17 @@ Notes:
 -   Push to your assignment repository in Github Classroom.
 -   Include a README.md file with informal comments answering the following questions:
     -   Is your solution fully working or not? How does your driver program demonstrate this?
+    
+    The homework week 1 solution can be found in v4. When you run the Driver, the solution is fully working. The driver demonstrates this by printing the string template and associating the HashMap to the correct string output. I print a random zippy quote; I chose not to create an array and just print a random quote. 
+    
     -   What extra credit problem(s) did you work on (#1, 2, 3, all)? Briefly describe how do you demonstrate the functionality?
+    
+    I attempted all of the extra credit. I ...
+    
     -   How much time did you spend on the assignment?
+    
+    I spent around 4 hours on the homework and extra credit. The extra credit was challenging.
+    
     -   Any feedback on the assignment?
+    
+    Nothing comes to mind. 
