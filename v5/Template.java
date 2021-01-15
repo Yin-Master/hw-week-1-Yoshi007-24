@@ -1,15 +1,27 @@
 package v5;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Map;
-import java.util.Scanner;
-import java.io.File;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Template {
+    private String str = "";
 
     public Template(String s) {
         words = s.split("\\s");
+    }
+
+    public void getZippy(String rN) throws IOException {
+        if (rN.equals("R")) {
+            zippyR();
+        }else
+            zippyN();
+    }
+
+    public String get() {
+        return "Zippy quote: " + str;
     }
 
     public String instantiate(Map<String, String> args) throws IOException {
@@ -21,10 +33,9 @@ public class Template {
                 else if (words[i].equals("$newline"))
                     translatedWords[i] = "\n";
                 else if (words[i].equals("$zippy"))
-                    translatedWords[i] = zippy();
+                    translatedWords[i] = get();
                 else if (args.containsKey(words[i]))
                     translatedWords[i] = args.get(words[i]);
-
             }
             else {
                 translatedWords[i] = words[i];
@@ -39,19 +50,31 @@ public class Template {
 
     private String [] words;
 
-    private String zippy() throws IOException {
+    private String zippyR() throws IOException {
         File file = new File("data/yow.lines");
         Scanner zippyFile = new Scanner(file);
-        String str = "";
+        //String str = "";
         Random rand = new Random();
-        int count = 0, max = 200;
+        int count = 0, max = 231;
         int random = rand.nextInt(max + 1);
         while (zippyFile.hasNextLine() && count != random) {
             count++;
             str = zippyFile.nextLine();
         }
         zippyFile.close();
-        return "Zippy Quote: " + str;
+        return str;
+    }
+
+    private String zippyN() throws IOException {
+        File file = new File("data/yow.lines");
+        Scanner zippyFile = new Scanner(file);
+        String[] arr;
+        int counter = 1;
+        while (zippyFile.hasNextLine()) {
+            str += counter++ + ". " + zippyFile.nextLine() + "\n";
+        }
+        zippyFile.close();
+        return str;
     }
 
 }

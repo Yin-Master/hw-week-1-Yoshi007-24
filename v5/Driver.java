@@ -10,11 +10,11 @@ public class Driver {
         String template = "Good $daypart $name - that's a nice $color shirt. " +
                 "$newline $zippy";
         Map<String, String> templateVars = new HashMap<String, String>();
+
         templateVars.put("$name", "Isaac");
         templateVars.put("$color", "green");
-        templateVars.put("$zippy", "Zippy quote: ");
-
         Greeter g = new Greeter(template);
+        templateVars.put("$zippy", "Zippy quote: ");
         String greeting = g.getGreeting(templateVars);
         System.out.println(greeting);
     }
