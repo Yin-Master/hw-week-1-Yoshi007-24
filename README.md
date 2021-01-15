@@ -65,11 +65,11 @@ Notes:
     
     -   What extra credit problem(s) did you work on (#1, 2, 3, all)? Briefly describe how do you demonstrate the functionality?
     
-    **I attempted all of the extra credit. I ...**
+    **I was able to complete the extra credit problem 1. When you run the drive I have the Greeter class asking the user if they want a random quote or all quotes sequentially and then I have the Template class doing the string construction and printing.**
     
     -   How much time did you spend on the assignment?
     
-    **I spent around 4 hours on the homework and extra credit. The extra credit was challenging and I had to come back to a give it some thought.**
+    **I spent around 5 hours on the homework and extra credit. The extra credit was challenging and I had to come back to a give it some thought.**
     
     -   Any feedback on the assignment?
     
